@@ -1,0 +1,52 @@
+void setup() {
+  pinMode (LED_BUILTIN, OUTPUT);
+}
+
+// loop functions run over and over again
+void dot () {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000);
+  digitalWrite (LED_BUILTIN, LOW);
+  delay(1000);
+}
+void dash () {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(3000);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+}
+void loop() {
+  dash();   //c
+  dot();
+  dash();
+  dot();
+
+  delay(2000);
+  dot();    //h
+  dot();
+  dot();
+  dot();
+  
+  delay(2000);
+  dot();    //e
+
+  delay(2000);
+  dot();    //l
+  dash();
+  dot();
+  dot();
+
+  delay(2000);
+  dot();    //s
+  dot();
+  dot();
+
+  delay(2000);
+  dot();    //e
+
+  delay(2000);
+  dot();    //a
+  dash();
+  delay(2000);
+
+  }
